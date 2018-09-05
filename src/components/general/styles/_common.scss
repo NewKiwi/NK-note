@@ -1,0 +1,19 @@
+/* 主色,品牌颜色 */
+$mainColor:#409EFF;
+
+/* 辅助色,除了主色外的场景色，需要在不同的场景中使用*/
+$isSuccess:#67C23A;
+$isWarning:#E6A23C;
+$isDanger:#F56C6C;
+$isInfo:#909399;
+
+/* neutral Color, 中性色用于文本、背景和边框颜色。通过运用不同的中性色，来表现层次结构。 */
+$mainText:#303133;
+$conventionalText:#606266;
+$secondaryText:#909399;
+$placeholderText:#C0C4CC;
+
+$firstLevelBorder:#DCDFE6;
+$secondLevelBorder:#E4E7ED;
+$thirdLevelBorder:#EBEEF5;
+$fourthLevelBorder:#F2F6FC;

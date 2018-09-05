@@ -1,0 +1,109 @@
+@import './_variable.scss';
+/**mixin命名开头首字母
+ *@prefix P  表示用position实现的样式
+ *@prefix F  表示用flex实现的样式
+ *@prefix IB 表示用inline-block实现的布局
+ */ 
+/* 字体 */
+@mixin titleFont {
+  font-size:30px;
+  font-weight:700;
+  color:$mainText;
+  line-height: 46px;
+  letter-spacing: 2.2px;
+}
+@mixin subtitleFont {
+  font-size:20px;
+  font-weight:700;
+  color:$mainText;
+  line-height: 32px;
+  letter-spacing: 1.5px;
+}
+
+@mixin normalFont {
+  font-size:16px;
+  font-weight:200;
+  color:$normalText;
+  line-height: 28px;
+  letter-spacing: 1.2px;
+}
+
+@mixin tipsFont {
+  font-size:14px;
+  font-weight:200;
+  color:$placeholderText;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+/***
+ * 布局和位置
+ *居中 */
+@mixin PCenter {
+  position: absolute;
+  left: 50%;
+  right: 0;
+  top:50%;
+  bottom: 0;
+}
+
+@mixin PFullContainer {
+  position: absolute;
+  left: 0;
+  right:0;
+  top: 0;
+  bottom: 0;
+}
+
+@mixin IBJustifyCenter{
+  display: inline-block;
+  text-align: justify;
+  vertical-align: middle;
+}
+
+@mixin IBChild {
+  display: inline-block;
+  text-align: center;
+}
+
+@mixin isVerticalTop {
+  vertical-align: top;
+}
+
+/* button */
+@mixin button {
+  // 文本不可以被选择
+  display:inline-block;
+  user-select:none;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  color: #ffffff;
+  -webkit-appearance: none;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  -webkit-transition: .1s;
+  transition: .1s;
+  font-size: 14px;
+}
+
+/* icon */
+@mixin icon {
+  [class*=" k-icon-"],
+  [class^=k-icon-] {
+      font-family: KIcons !important;
+      speak: none;
+      font-style: normal;
+      font-weight: 400;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      vertical-align: baseline;
+      display: inline-block;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+}
